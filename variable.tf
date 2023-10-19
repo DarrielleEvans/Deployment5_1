@@ -1,1 +1,17 @@
-
+variable "access_key" {}
+variable "secret_key" {}
+variable "region" {}
+variable "vpc_name" {}
+variable "availability_zone_A" {}
+variable "availability_zone_B" {}
+variable "pub_subnetA_name" {}    
+variable "pub_subnetB_name" {}   
+variable "ami" {}
+variable "instance_type" {}
+variable "instance_A_name" {}
+variable "instance_B_name" {}
+variable "instance_C_name" {}
+variable "key_name" {}
+variable "security_groups_name" {}
+variable "igw_name" {}
+variable "route_table_name" {}
