@@ -1,5 +1,5 @@
 # Purpose
-This repository contains a deployment of the banking application. In previous implementations, I deployed the application on the same instance as the Jenkins Build. In this deployment, I deployed the application on two different instances simultaneously using Jenkin's agents. 
+This repository contains a deployment of the banking application. In previous implementations, I deployed the application on the same instance as the Jenkins Build. In this deployment, I deployed the application on two different instances simultaneously using Jenkin's agents. Deploying an application using a Jenkins agent improves performance and enhances security.
 
 
 # Issues
@@ -28,12 +28,18 @@ The ssh could not find the expected credentials because I did not copy the priva
 ![dp5-1 drawio](https://github.com/DarrielleEvans/Deployment5_1/assets/89504317/27ca7903-607e-4aba-92ee-7ec95b45c967)
 
 # Optimization
+The application will be more secure by placing the Jenkins server in a private subnet and using endpoint connections to launch the agents on the instances located in public subnets. Isolating your Jenkins server provides an additional layer of security because the server will not be directly accessible by the internet.
 
-#Technologies Used
+
+# Technologies Used
 * Jenkins
 * AWS: 3 X T2.Medium Instances, VPC, Security Groups, Route Table, 2 Public Subnets
 * Keep it Running Plugin (Jenkins)
 * Software Common Properties package(EC2)
 * Terraform
+
+# Notes
+A load balancer would increase the application's availability for users. 
+The Jenkins agent is great for applications that are located across multiple servers. You can distribute the workload across multiple instances and run pipelines simultaneously.
   
 
