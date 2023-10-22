@@ -14,6 +14,14 @@ The ssh could not find the expected credentials because I did not copy the priva
 3. Install Jenkins on a separate instance and install the following dependencies:
    - software-properties-common(helps you add and remove PPA, otherwise you will have to add them to your source list manually), sudo add-apt-repository -y ppa:deadsnakes/ppa(allows you to use different versions of pythons), python3.7, python3.7-venv}
    - Install the following plugin: “Pipeline Keep Running Step”
+4. Install the following dependencies on the other 2 instances that will store your application
+   - Install the following: {default-jre, software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, python3.7, python3.7-        venv}
+5. Configure two agents on your Jenkins server to be launched on each application server.
+6. Run the Jenkins build
+<img width="1065" alt="Screen Shot 2023-10-20 at 2 02 39 PM" src="https://github.com/DarrielleEvans/Deployment5_1/assets/89504317/7d0fb721-f50d-46b9-bff3-b977ed725a86">
+
+8. Verify the application runs on port 8000
+<img width="1405" alt="Screen Shot 2023-10-20 at 2 05 07 PM" src="https://github.com/DarrielleEvans/Deployment5_1/assets/89504317/2408750b-a702-4d8f-9d98-60910d1a1486">
 
 
 # System Diagram
