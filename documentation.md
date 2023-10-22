@@ -25,7 +25,8 @@ The ssh could not find the expected credentials because I did not copy the priva
 
 
 # System Diagram
-![dp5-1 drawio](https://github.com/DarrielleEvans/Deployment5_1/assets/89504317/27ca7903-607e-4aba-92ee-7ec95b45c967)
+![dp5-1 drawio (1)](https://github.com/DarrielleEvans/Deployment5_1/assets/89504317/fdca558b-da4e-4bbb-9e72-1c1f68cc63e8)
+
 
 # Optimization
 The application will be more secure by placing the Jenkins server in a private subnet and using endpoint connections to launch the agents on the instances located in public subnets. Isolating your Jenkins server provides an additional layer of security because the server will not be directly accessible by the internet.
