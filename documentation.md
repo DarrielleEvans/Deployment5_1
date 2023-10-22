@@ -12,8 +12,8 @@ The ssh could not find the expected credentials because I did not copy the priva
 1. Create a private key pair in AWS
 2. Create a VPC with the following resources: 2 public subnets, security groups, 1 route table, and 3 EC2 instances.
 3. Install Jenkins on a separate instance and install the following dependencies:
-   * - software-properties-common(helps you add and remove PPA, otherwise you will have to add them to your source list manually), sudo add-apt-repository -y ppa:deadsnakes/ppa(allows you to use different versions of pythons), python3.7, python3.7-venv}
-   * - Install the following plugin: “Pipeline Keep Running Step”
+   - software-properties-common(helps you add and remove PPA, otherwise you will have to add them to your source list manually), sudo add-apt-repository -y ppa:deadsnakes/ppa(allows you to use different versions of pythons), python3.7, python3.7-venv}
+   - Install the following plugin: “Pipeline Keep Running Step”
 
 
 # System Diagram
